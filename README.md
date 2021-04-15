@@ -11,8 +11,6 @@ This project is created with the simple objective of consolidating certain techn
 This project is created with:
 * React.Js
 * Next.Js
-* Redux
-* React Router
 * Firebase
 * Tailwind CSS
 
