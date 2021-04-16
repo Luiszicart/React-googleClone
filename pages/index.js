@@ -4,10 +4,11 @@ import { ViewGridIcon } from '@heroicons/react/solid'
 import Image from 'next/image'
 import { SearchIcon } from '@heroicons/react/outline'
 import { MicrophoneIcon } from '@heroicons/react/outline'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div>
+    <div className='flex flex-col justify-center h-screen'>
       <Head>
         <title>Google</title>
         <link rel="icon" href="/favicon.ico" />
@@ -50,6 +51,8 @@ export default function Home() {
            <button className="btn">I'm Feeling Lucky</button>
          </div>
       </form>
+
+      <Footer />
     </div>
   )
 }
