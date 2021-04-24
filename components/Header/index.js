@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useRef } from 'react'
 import Avatar from '../Avatar'
+import HeaderOptions from '../HeaderOptions'
 
 function Header() {
   const router = useRouter()
@@ -46,6 +47,7 @@ function Header() {
           url='https://assetstools.cosentino.com/api/v1/bynder/color/SL6/detalle/SL6-detail.jpg?w=1024&h=1024&auto=compress%2Cformat'
         />
       </div>
+      <HeaderOptions />
     </header>
   )
 }
