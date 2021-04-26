@@ -24,11 +24,11 @@ function Search({ results }) {
 export default Search
 
 export async function getServerSideProps(context) {
-  const useDummyData = true
-  const starIndex = context.query.start || '0'
+  const useDummyData = true // Change here to consume Google's API or use DD
+  const startIndex = context.query.start || '0'
 
   const data = useDummyData ? Response : await fetch(
-    `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.term}&start=${starIndex}`
+    `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.term}&start=${startIndex}`
   ).then(response => response.json())
 
   return {
