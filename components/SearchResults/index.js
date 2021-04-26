@@ -1,3 +1,5 @@
+import PaginationButtons from '../Pagination'
+
 function SearchResults({ results }) {
   return (
     <div className='mx-auto w-full px-3 sm:pl-[5%] md:pl-[14%] lg:pl-52'>
@@ -7,7 +9,7 @@ function SearchResults({ results }) {
         <div key={result.link} className='max-w-xl mb-8'>
 
           <div className='group'>
-            <a href={result.link} className='text-sml'>
+            <a href={result.link} className='text-sml line-clamp-1'>
               {result.formattedUrl}
             </a>
             <a href={result.link}>
@@ -18,9 +20,11 @@ function SearchResults({ results }) {
           <p className='line-clamp-2'>{result.snippet}</p>
         </div>
       ))}
-
+      
+      <PaginationButtons />
     </div>
 
   )
 }
+
 export default SearchResults

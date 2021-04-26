@@ -33,4 +33,4 @@ yarn-error.log*
 # vercel
 .vercel
 
-keys.js
+/keys.js
